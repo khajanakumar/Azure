@@ -10,7 +10,7 @@ SELECT
     
 FROM
     OPENROWSET(
-        BULK 'https://dp203synapsecoursedl.dfs.core.windows.net/dp203synapseprimarycontainer/trip_data_green_csv/year=2021/month=01/green_tripdata_2021-01.csv',
+        BULK 'https://<storage Account name>.dfs.core.windows.net/dp203synapseprimarycontainer/trip_data_green_csv/year=2021/month=01/green_tripdata_2021-01.csv',
         FORMAT = 'CSV',
         PARSER_VERSION = '2.0',
         HEADER_ROW = True
