@@ -1,0 +1,2 @@
+create database collatedb
+collate Latin1_General_100_BIN2_UTF8
