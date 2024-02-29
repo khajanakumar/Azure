@@ -7,7 +7,7 @@ SELECT
     count(1)
 FROM
     OPENROWSET(
-        BULK 'https://dp203synapsecoursedl.dfs.core.windows.net/dp203synapseprimarycontainer/trip_data_green_csv/year=*/month=*/*.csv',           
+        BULK 'https://<storage Account name>.dfs.core.windows.net/dp203synapseprimarycontainer/trip_data_green_csv/year=*/month=*/*.csv',           
         FORMAT = 'CSV',
         PARSER_VERSION = '2.0',
         HEADER_ROW = True
