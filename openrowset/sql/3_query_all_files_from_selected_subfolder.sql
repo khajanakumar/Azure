@@ -1,5 +1,6 @@
 /* select files from specific sub folder */
 
+
 SELECT
     distinct result.filename() as file_name
 FROM
