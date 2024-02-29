@@ -1,5 +1,7 @@
 use tempdb
 -- Create file format csv_file_format for parser version 2.0
+-- File Formats can be reverse engineered but alwyas a good practise to have a centralised file formats.
+ 
 IF NOT EXISTS (SELECT * FROM sys.external_file_formats WHERE name ='csv_file_format')
   CREATE EXTERNAL FILE FORMAT csv_file_format  
   WITH (  
